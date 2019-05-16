@@ -1797,7 +1797,7 @@ header, section, footer, aside, nav, main, article, figure {
         padding: 18px 7px;
         margin-bottom: 15px;
         min-height: 120px;
-        padding-right: 25px;
+        padding-right: 50px;
       }
 
       .menu__col {
