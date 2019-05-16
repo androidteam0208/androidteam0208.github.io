@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1634a9db-a740-47e2-bb68-6aafdc6c4d2c" name="Default Changelist" comment="" />
+    <list default="true" id="1634a9db-a740-47e2-bb68-6aafdc6c4d2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,19 +15,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="293" column="14" lean-forward="true" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#1640#1646#0" expanded="true" />
-                    <element signature="e#1738#1744#0" expanded="true" />
-                    <element signature="e#2034#2040#0" expanded="true" />
-                    <element signature="e#2463#2469#0" expanded="true" />
-                    <element signature="e#2554#2560#0" expanded="true" />
-                    <element signature="e#2648#2654#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="102">
+                  <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/style/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -34,10 +38,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/style/style.css">
+            <entry file="file://$PROJECT_DIR$/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="2342" selection-start-line="2342" selection-end-line="2342" selection-end-column="42" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -51,6 +55,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -76,7 +81,6 @@
       <find>item__decript</find>
       <find>gallery</find>
       <find>.gallery__item .item</find>
-      <find>navbar</find>
       <find>gal</find>
       <find>reser__button</find>
       <find>menu</find>
@@ -85,6 +89,7 @@
       <find>footer__title</find>
       <find>social__icons</find>
       <find>registment__button</find>
+      <find>navbar</find>
     </findStrings>
     <replaceStrings>
       <replace>1280px</replace>
@@ -98,10 +103,11 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/style.css" />
+        <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="20" />
     <option name="width" value="1750" />
@@ -117,8 +123,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="CutLayOut1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CutLayOut1" type="462c0819:PsiDirectoryNode" />
+              <item name="androidteam0208.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidteam0208.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidteam0208.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidteam0208.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="androidteam0208.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="androidteam0208.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -130,7 +146,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/magento" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -165,11 +181,12 @@
       <workItem from="1557302156348" duration="30000" />
       <workItem from="1557304109130" duration="6590000" />
       <workItem from="1557363876902" duration="20866000" />
+      <workItem from="1557986694461" duration="11889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78611000" />
+    <option name="totallyTimeSpent" value="90500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -200,25 +217,24 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/style/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="2342" selection-start-line="2342" selection-end-line="2342" selection-end-column="42" />
+        <state relative-caret-position="102">
+          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="293" column="14" lean-forward="true" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="14" />
-          <folding>
-            <element signature="e#1640#1646#0" expanded="true" />
-            <element signature="e#1738#1744#0" expanded="true" />
-            <element signature="e#2034#2040#0" expanded="true" />
-            <element signature="e#2463#2469#0" expanded="true" />
-            <element signature="e#2554#2560#0" expanded="true" />
-            <element signature="e#2648#2654#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>

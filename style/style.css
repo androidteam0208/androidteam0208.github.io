@@ -55,7 +55,7 @@ header, section, footer, aside, nav, main, article, figure {
   }
   .header__menuicon{
     display: inline-block;
-    /*position: absolute;*/
+    position: absolute;
     padding: 10px;
 
   }
@@ -161,35 +161,52 @@ header, section, footer, aside, nav, main, article, figure {
     }
     @media only screen and ( min-width: 720px ) {
       .header__content {
-        min-width: 690px;
+        min-width: 725px;
         min-height: 95px;
       }
-      .header__menuicon {
-        display: none;
-      }
+
       .header__form{
         top: 28px;
         bottom: unset;
-        left: 130px;
+        left: 190px;
         max-width: 440px;
       }
 
       .header__logo img {
         top: 26px;
-        left: 0px;
+        left: 50px;
       }
       .header__icon {
         top: 30px;
         font-size: 30px;
       }
+      .header__menuicon {
+        position: absolute;
+        top: 13px;
+      }
+
 
 
     }
     @media only screen and ( min-width: 768px ) {
 
       .header__content {
-        min-width: 690px;
+        min-width: 760px;
       }
+      .header__form {
+        left: 195px;
+      }
+      .header__logo img {
+        left: 50px;
+      }
+      .header__menuicon {
+        position: absolute;
+        top: 13px;
+      }
+      .header__icon {
+        top: 25px;
+      }
+
 
     }
     @media only screen and ( min-width: 1024px ) {
@@ -214,6 +231,9 @@ header, section, footer, aside, nav, main, article, figure {
       .header__icon {
         top: 15px;
         font-size: 28px;
+      }
+      .header__menuicon {
+        display: none;
       }
     }
 
@@ -271,10 +291,10 @@ header, section, footer, aside, nav, main, article, figure {
       z-index: 2;
     }
 
-    .navbar__ul {
+    .navbar .navbar__ul {
       display: flex;
       width: 1200px;
-      height: 100%;
+      /*height: 100%;*/
       line-height: 35px;
       margin: 0 auto;
     }
@@ -297,7 +317,7 @@ header, section, footer, aside, nav, main, article, figure {
 
     /* 4 item first */
     .four_item {
-      height: 100%;
+      /*height: 100%;*/
       background-color: #5d0f19;
     }
 
@@ -334,6 +354,49 @@ header, section, footer, aside, nav, main, article, figure {
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
+    /*nhấp vào menu icon sẽ hiện ra List*/
+.navbarList{
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #a21527;
+}
+      .navbarList a{
+        color: white;
+      }
+      navbarList .navbar__ul{
+        display: block;
+      }
+      .navbarList .navbar__li {
+        min-width: 70px;
+        list-style: none;
+        padding: 0 10px;
+        font-size: 19px;
+        font-weight: 600;
+        height: 53px;
+        line-height : 53px;
+        border-bottom: 1px solid white;
+      }
+
+      .navbarList .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 100%;
+        box-shadow: 0 5px 7px 0 rgba(255, 0, 0, 0.2);
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        top: 52px;
+        left: 0px;
+      }
+      .dropdown-content a {
+        color: #ffff;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
     @media only screen and ( min-width: 320px ) {
       .navbar {
         display: none;
@@ -341,6 +404,39 @@ header, section, footer, aside, nav, main, article, figure {
       header__menuicon:active{
         display: block;
       }
+
+      /*.navbar__ul{*/
+      /*  display: block;*/
+      /*}*/
+      /*.navbar__li {*/
+      /*  min-width: 70px;*/
+      /*  list-style: none;*/
+      /*  padding: 0 10px;*/
+      /*  font-size: 19px;*/
+      /*  font-weight: 600;*/
+      /*  height: 53px;*/
+      /*  line-height : 53px;*/
+      /*  border-bottom: 1px solid white;*/
+      /*}*/
+
+      /*.dropdown-content {*/
+      /*  display: none;*/
+      /*  position: absolute;*/
+      /*  background-color: lightblue;*/
+      /*  min-width: 100%;*/
+      /*  box-shadow: 0 5px 7px 0 rgba(255, 0, 0, 0.2);*/
+      /*  border-bottom-left-radius: 3px;*/
+      /*  border-bottom-right-radius: 3px;*/
+      /*  top: 52px;*/
+      /*  left: 0px;*/
+      /*}*/
+      /*.dropdown-content a {*/
+      /*  color: #ffff;*/
+      /*  padding: 0px;*/
+      /*  text-decoration: none;*/
+      /*  display: block;*/
+      /*  text-align: left;*/
+      /*}*/
     }
 
     @media only screen and ( min-width: 440px ) {

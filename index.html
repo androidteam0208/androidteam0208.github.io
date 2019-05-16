@@ -25,7 +25,7 @@
     <!--Start Header-->
     <header class="header">
         <div class="header__content">
-            <span class="header__menuicon"><a href="#"><i class="fa fa-bars"></i></a></span>
+            <span class="header__menuicon" id="menuicon" onclick="checkIcon()"><a href="#"><i class="fa fa-bars"></i></a></span>
             <span class="header__logo"><a href="#"><img src="./image/logo.png" alt="city"></a></span>
             <div class="header__form">
                 <input type="text" placeholder="Search" class="header__input">
@@ -37,11 +37,11 @@
     <!-- end header -->
 
     <!-- Start Thanh navbar -->
-    <div class="navbar">
-        <ul class="navbar__ul">
-            <li class="navbar__li four_item dropdown">
+    <div class="navbar" id="nav">
+        <ul class="navbar__ul" id="nav__ul">
+            <li class="navbar__li four_item dropdown" id="nav__li">
                 <a href="#" class="dropbtn">WoOw!<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="dropdown-content">
                     <a href="#"><span><i class="fa fa-cutlery"></i> &nbsp;Gastronomía</span></a>
                     <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
                     <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
@@ -739,7 +739,7 @@
         <br><br>
     </section>
 </div>
-
+<script src="js/index.js" ></script>
 
 </body>
 
