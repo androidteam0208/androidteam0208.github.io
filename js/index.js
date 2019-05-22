@@ -43,7 +43,7 @@ function addEventClick() {
     for (const btn of dropBtn1) {
         btn.addEventListener('click', function (event) {
             let dropDownDiv = this.parentNode.querySelector("div .dropdown-content");
-            dropDownDiv.classList.add('show');
+            dropDownDiv.classList.toogle('show');
         })
     }
 }
