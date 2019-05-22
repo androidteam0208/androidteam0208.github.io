@@ -1,20 +1,6 @@
-
+var menuicon = document.getElementById("menuicon");
 var check = false;
-function  showList() {
-    // console.log("show list");
-    var navbar = document.getElementById("nav");
-    navbar.classList.add("navbarList");
-    navbar.classList.remove("navbar");
-
-
-}
-function  hiddeList() {
-    var listmav = document.getElementById("nav");
-    listmav.classList.add("navbar");
-    listmav.classList.remove("navbarList");
-
-
-}
+menuicon.onclick= function() {checkIcon()};
 function checkIcon() {
     if(!check){
         showList();
@@ -25,6 +11,18 @@ function checkIcon() {
         check= false;
     }
 }
+function  showList() {
+    var navbar = document.getElementById("nav");
+    navbar.classList.add("navbarList");
+    navbar.classList.remove("navbar");
+
+}
+function  hiddeList() {
+    var listmav = document.getElementById("nav");
+    listmav.classList.add("navbar");
+    listmav.classList.remove("navbarList");
+}
+
 document.getElementsByTagName("BODY")[0].onresize = function() {getWidth()};
 
 function getWidth() {
@@ -39,4 +37,36 @@ function getWidth() {
         }
     }
 }
+//add vent click item menu to show dropdown
+function addEventClick() {
+    let dropBtn1 = document.querySelectorAll(".dropbtn");
+    for (const btn of dropBtn1) {
+        btn.addEventListener('click', function (event) {
+            let dropDownDiv = this.parentNode.querySelector("div .dropdown-content");
+            dropDownDiv.classList.add('show');
+        })
+    }
+}
+addEventClick();
+//when click out item menu with class dropbtn -> hide dropdown content
+window.addEventListener("click", function(event){
+    let contents = document.getElementsByClassName('dropdown-content');
+    if (!event.target.matches(".dropbtn")){
+        for (let i = 0; i < contents.length; i++) {
+            contents[i].classList.remove("show");
+        }
+    }
+    // else {
+    //     for (let i = 0; i < contents.length; i++) {
+    //         contents[i].classList.remove("show");
+    //     }
+    //     // let dropBtn1 = document.querySelector(".dropbtn");
+    //     // for (const btn of dropBtn1) {
+    //     //         let dropDownDiv = this.parentNode.querySelector("div .dropdown-content");
+    //     //         dropDownDiv.classList.add('show');
+    //     // }
+    // }
+});
+
+
 

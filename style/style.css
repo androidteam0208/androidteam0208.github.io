@@ -231,6 +231,7 @@ header, section, footer, aside, nav, main, article, figure {
       .header__icon {
         top: 15px;
         font-size: 28px;
+        right: 60px;
       }
       .header__menuicon {
         display: none;
@@ -242,6 +243,9 @@ header, section, footer, aside, nav, main, article, figure {
 
       .header__content {
         min-width: 1200px;
+      }
+      header__icon{
+        right: 60px;
       }
     }
     @media only screen and ( min-width: 1280px ) {
@@ -341,32 +345,32 @@ header, section, footer, aside, nav, main, article, figure {
 
     .dropdown-content a {
       color: #ffff;
-      padding: 12px 10px;
-      text-decoration: none;
+      padding: 4px 26px;
       display: block;
       text-align: left;
+      border-bottom: 1px solid white;
     }
 
     .dropdown-content a:hover {
       background-color: #5d0f19;
     }
 
-    .dropdown:hover .dropdown-content {
+    .navbar .dropdown:hover .dropdown-content {
       display: block;
     }
 
     /*nhấp vào menu icon sẽ hiện ra List*/
-.navbarList{
-  min-width: 100%;
-  min-height: 100%;
-  background-color: #a21527;
-}
+      .navbarList{
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #a21527;
+      }
       .navbarList a{
         color: white;
       }
-      navbarList .navbar__ul{
-        display: block;
-      }
+      /*navbarList .navbar__ul{*/
+      /*  display: block;*/
+      /*}*/
       .navbarList .navbar__li {
         min-width: 70px;
         list-style: none;
@@ -377,18 +381,27 @@ header, section, footer, aside, nav, main, article, figure {
         line-height : 53px;
         border-bottom: 1px solid white;
       }
-      
-.navbarList .dropdown:hover .dropdown-content {
-    display: none;
-}
+      .show {
+        display:block;
+        width: 100%;
+        background-color: rgb(121, 179, 168);
+        top:53px;
+      }
+
+      /*.navbarList .dropdown:hover .dropdown-content {*/
+      /*   display:block;*/
+      /*   width: 100%;*/
+      /*  background-color: rgb(179, 83, 81);*/
+      /*  top:53px;*/
+      /* }*/
 
     @media only screen and ( min-width: 320px ) {
       .navbar {
         display: none;
       }
-      header__menuicon:active{
-        display: block;
-      }
+      /*header__menuicon:active{*/
+      /*  display: block;*/
+      /*}*/
 
     }
 
@@ -396,6 +409,7 @@ header, section, footer, aside, nav, main, article, figure {
 
     }
     @media only screen and ( min-width: 540px ) {
+
     }
 
     @media only screen and ( min-width: 640px ) {
@@ -425,7 +439,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .dropdown-content {
-        top: 25px;
+        /*top: 25px;*/
         min-width: 200px;
       }
 
@@ -445,11 +459,11 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .navbar__li {
-        min-width: 62px;
+        min-width: 60px;
 
       }
       .navbar__li a{
-        font-size: 15px;
+        font-size: 14px;
       }
 
       .dropdown-content {
@@ -469,8 +483,10 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .navbar__li {
-        /*min-width: 70px;*/
-        font-size: 16px;
+        min-width: 80px;
+      }
+      .navbar__li a{
+        font-size: 15px;
       }
     }
 
@@ -482,7 +498,6 @@ header, section, footer, aside, nav, main, article, figure {
 
       .navbar__li {
         min-width:80px;
-        font-size: 16px;
       }
     }
 
@@ -497,7 +512,6 @@ header, section, footer, aside, nav, main, article, figure {
 
       .navbar__li {
         min-width: 87px;
-        font-size: 16px;
       }
 
       .dropdown-content {
@@ -512,11 +526,15 @@ header, section, footer, aside, nav, main, article, figure {
 
       .navbar__li {
         min-width: 87px;
+      }
+      .navbar__li a {
         font-size: 16px;
       }
 
-
     }
+
+
+
     @media only screen and ( min-width: 1680px ) {
       .navbar__ul {
         min-width: 1600px;
@@ -524,7 +542,6 @@ header, section, footer, aside, nav, main, article, figure {
 
       .navbar__li {
         min-width: 120px;
-        font-size: 16px;
       }
     }
     @media only screen and ( min-width: 1920px ) {
@@ -533,8 +550,10 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .navbar__li {
-        min-width: 110px;
-        font-size: 15px;
+        min-width: 130px;
+      }
+      .navbar__li a {
+        font-size: 17px;
       }
     }
 
