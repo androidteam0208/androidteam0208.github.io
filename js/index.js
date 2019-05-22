@@ -15,7 +15,6 @@ function  showList() {
     var navbar = document.getElementById("nav");
     navbar.classList.add("navbarList");
     navbar.classList.remove("navbar");
-
 }
 function  hiddeList() {
     var listmav = document.getElementById("nav");
@@ -43,7 +42,7 @@ function addEventClick() {
     for (const btn of dropBtn1) {
         btn.addEventListener('click', function (event) {
             let dropDownDiv = this.parentNode.querySelector("div .dropdown-content");
-            dropDownDiv.classList.add('show');
+            dropDownDiv.classList.toggle('show');
         })
     }
 }
@@ -56,17 +55,12 @@ window.addEventListener("click", function(event){
             contents[i].classList.remove("show");
         }
     }
-    // else {
-    //     for (let i = 0; i < contents.length; i++) {
-    //         contents[i].classList.remove("show");
-    //     }
-    //     // let dropBtn1 = document.querySelector(".dropbtn");
-    //     // for (const btn of dropBtn1) {
-    //     //         let dropDownDiv = this.parentNode.querySelector("div .dropdown-content");
-    //     //         dropDownDiv.classList.add('show');
-    //     // }
-    // }
 });
+
+
+
+
+
 
 
 
