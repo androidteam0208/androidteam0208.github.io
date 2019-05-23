@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,8 @@
     <!--Start Header-->
     <header class="header">
         <div class="header__content">
-            <span class="header__menuicon" id="menuicon" onclick="checkIcon()"><a href="#"><i class="fa fa-bars"></i></a></span>
+            <span class="header__menuicon" id="menuicon" onclick="checkIcon()"><a href="#"><i
+                    class="fa fa-bars"></i></a></span>
             <span class="header__logo"><a href="#"><img src="./image/logo.png" alt="city"></a></span>
             <div class="header__form">
                 <input type="text" placeholder="Search" class="header__input">
@@ -51,14 +54,12 @@
                 </div>
             </li>
             <li class="navbar__li four_item dropdown">
-                <a href="#" class="dropbtn" >City!<i class="fa fa-caret-down"></i></a>
-                <div>
-                    <div class="dropdown-content">
-                        <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                        <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                        <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más <Ser></Ser>vicios</span></a>
+                <a href="#" class="dropbtn">City!<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
+                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
+                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más <Ser></Ser>vicios</span></a>
 
-                    </div>
                 </div>
 
             </li>
@@ -170,27 +171,27 @@
             <div class="banner__bar">
                 <div class="banner__input">
                     <label for="fecha" class="banner__label">Fecha</label>
-                    <br />
+                    <br/>
                     <select name="fecha" id="fecha" class="select">
                         <option value="1">Cualquier fecha</option>
                     </select>
                 </div>
                 <div class="banner__input">
                     <label for="Barrio" class="banner__label">Barrio</label>
-                    <br />
+                    <br/>
                     <select name="Barrio" id="Barrio" class="select">
-                        <option value="1">Cualquier barrio </option>
+                        <option value="1">Cualquier barrio</option>
                     </select>
                 </div>
                 <div class="banner__input">
                     <label for="Tipo" class="banner__label">Tipo de comida </label>
-                    <br />
+                    <br/>
                     <select name="Tipo" id="Tipo" class="select">
                         <option value="1"><a href="#">Cualquier tipo de comida </a></option>
                     </select>
                 </div>
                 <div class="banner__input">
-                    <br />
+                    <br/>
                     <button class="banner__button select "><a href="#">Buscar</a></button>
                 </div>
 
@@ -219,10 +220,10 @@
                     <a href="#">
                         <img src="./image/catalog2.jpg" alt="" class="imageCatalog"></a>
                     <a href="#">
-                    <div class="item__content">
-                        <p><b>Café y antojos</b></p>
-                        <p>35 restaurantes</p>
-                    </div>
+                        <div class="item__content">
+                            <p><b>Café y antojos</b></p>
+                            <p>35 restaurantes</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -324,8 +325,8 @@
                     <!-- noi dung cua hinh -->
                     <div class="item__content">
                         <!-- phan tieu de cua 1 item trong slider -->
-                        <p ><a href="#" class="item__title">La Pasiva</a></p>
-                        <p><a href="#" class="item__decript" >Buceo | Gastronomía</a></p>
+                        <p><a href="#" class="item__title">La Pasiva</a></p>
+                        <p><a href="#" class="item__decript">Buceo | Gastronomía</a></p>
                         <!-- phan số  mau do item trong slider -->
                         <span class="item__number">6</span>
                         <!-- phan diem  -->
@@ -351,8 +352,8 @@
                         <img src="./image/slider2.jpg" alt="" class="imageslider"></a>
                     <div class="item__content">
                         <!-- phan tieu de cua 1 item trong slider -->
-                        <p ><a href="#"class="item__title">Temaki Sushi</a></p>
-                        <p><a href="#"class="item__decript">Punta Carretas | Gastronomía</a></p>
+                        <p><a href="#" class="item__title">Temaki Sushi</a></p>
+                        <p><a href="#" class="item__decript">Punta Carretas | Gastronomía</a></p>
                         <span class="item__number">10</span>
                         <span class="item__point">Excelente! (1450 opiniones)</span>
                     </div>
@@ -378,7 +379,7 @@
                     <a href="#">
                         <img src="./image/slider3.jpg" alt="" class="imageslider"></a>
                     <div class="item__content">
-                        <p ><a href="#" class="item__title" >Francis</a></p>
+                        <p><a href="#" class="item__title">Francis</a></p>
                         <p><a href="#" class="item__decript">Punta Carretas| Gastronomía</a></p>
                         <span class="item__number">8</span>
                         <span class="item__point">Muy bueno (550 opiniones)</span>
@@ -658,17 +659,17 @@
                         <a href="#"><i class="fa fa-phone-square"></i> (+598) 2408 5555
                         </a></dd>
                     <dd><a href="#">Marco Bruto 1373 esq. Rivera</a></dd>
-                    <br />
+                    <br/>
 
-                    <dd><a href="#"><i class="fas fa-clock"></i><strong> Atención telefónica:</strong><br />
+                    <dd><a href="#"><i class="fas fa-clock"></i><strong> Atención telefónica:</strong><br/>
                         Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</a></dd>
-                    <br />
+                    <br/>
                     <dd>
                         <a href="#"><i class="fas fa-clock"></i></a>
                         <a href="#"><strong> Retiro de productos:</strong></a>
                         <br><a href="#">Lunes a Viernes de 9a 20hs y Sábados de 10 a 15hs.
                     </a></dd>
-                    <br />
+                    <br/>
                     <dd><a href="#">Envianos tu consulta</a></dd>
                 </dl>
             </div>
@@ -677,7 +678,8 @@
                     <dt><a href="#">Comprá con tranquilidad</a></dt>
                     <dd><a href="#">woOw! es el 1er sitio de compras online de Uruguay que te permite obtener
                         grandes descuentos.
-                    </a></dd><br>
+                    </a></dd>
+                    <br>
                     <dd>
                         <label><a href="#">¿Cómo funciona woOw!?</a></label>
                     </dd>
@@ -714,7 +716,8 @@
                     <li><a href="#"><img alt="OCA"
                                          src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-oca.png"></a></li>
                     <li><a href="#"><img alt="Santander"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-santander.png"></a></li>
+                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-santander.png"></a>
+                    </li>
                     <li><a href="#"><img alt="Cabal"
                                          src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-cabal.png"></a></li>
                     <li><a href="#"><img alt="Abitab"
@@ -729,7 +732,8 @@
                                          src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-passcard.png"></a></li>
                 </ul>
                 <h4 class="footer_dac"><a href="#">Envíos a todo el país: <img alt="DAC" class="dac"
-                                                                               src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-dac.png"></a></h4>
+                                                                               src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-dac.png"></a>
+                </h4>
             </div>
             <div class="footer__logo">
                 <a href="#"><img src="https://cdn.woow.com.uy/public/4_0/img/logo-woow-2017.svg" alt="logo"></a>
@@ -742,8 +746,7 @@
         <br><br>
     </section>
 </div>
-<script src="js/index.js" ></script>
-
+<script src="js/index.js"></script>
 </body>
 
 </html>

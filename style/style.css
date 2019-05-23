@@ -8,12 +8,10 @@ header, section, footer, aside, nav, main, article, figure {
       box-sizing: border-box;
   }
   body{
-    /*font-size: 18px;*/
     color: black;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 
-    /* max-width: 1920px; */
 
   }
   a{
@@ -21,7 +19,6 @@ header, section, footer, aside, nav, main, article, figure {
     color: #000000;
   }
   .cover{
-    /* max-width: 1544px; */
     margin: 0 auto;
     background: #f0f0f0;
   }
@@ -33,7 +30,6 @@ header, section, footer, aside, nav, main, article, figure {
 
   /* Header */
   .header{
-      /*height: 80px;*/
       background-color: #a21527;
   }
   .header__content{
@@ -41,7 +37,6 @@ header, section, footer, aside, nav, main, article, figure {
       margin: 0 auto;
       word-spacing: -5px;
       position: relative;
-      /*top: 20px;*/
 
   }
   .header__logo img{
@@ -306,7 +301,7 @@ header, section, footer, aside, nav, main, article, figure {
     .navbar__li {
       min-width: 70px;
       list-style: none;
-      padding: 0 10px;
+      /*padding: 0 10px;*/
       font-size: 13px;
       font-weight: 600;
     }
@@ -324,6 +319,9 @@ header, section, footer, aside, nav, main, article, figure {
       /*height: 100%;*/
       background-color: #5d0f19;
     }
+    .dropbtn{
+      padding-left: 10px;
+    }
 
     .dropdown {
       position: relative;
@@ -338,8 +336,8 @@ header, section, footer, aside, nav, main, article, figure {
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       z-index: 1;
-      top: 35px;
-      left: 0px;
+      /*top: 35px;*/
+      /*left: 0px;*/
 
     }
 
@@ -352,7 +350,7 @@ header, section, footer, aside, nav, main, article, figure {
     }
 
     .dropdown-content a:hover {
-      background-color: #5d0f19;
+      background-color: #b35351;
     }
 
     .navbar .dropdown:hover .dropdown-content {
@@ -374,10 +372,10 @@ header, section, footer, aside, nav, main, article, figure {
       .navbarList .navbar__li {
         min-width: 70px;
         list-style: none;
-        padding: 0 10px;
+        /*padding-left: 15px;*/
         font-size: 19px;
         font-weight: 600;
-        height: 53px;
+        min-height: 53px;
         line-height : 53px;
         border-bottom: 1px solid white;
       }
@@ -386,6 +384,7 @@ header, section, footer, aside, nav, main, article, figure {
         width: 100%;
         background-color: rgb(121, 179, 168);
         top:53px;
+        position: unset;
       }
 
       /*.navbarList .dropdown:hover .dropdown-content {*/
@@ -435,11 +434,9 @@ header, section, footer, aside, nav, main, article, figure {
       .navbar__li {
         min-width: 45px;
         font-size: 8px;
-        padding: 0 5px;
       }
 
       .dropdown-content {
-        /*top: 25px;*/
         min-width: 200px;
       }
 
@@ -455,7 +452,6 @@ header, section, footer, aside, nav, main, article, figure {
       .navbar__ul {
         min-width: 870px;
         line-height: 30px;
-        /*padding-left: 10px;*/
       }
 
       .navbar__li {
@@ -493,7 +489,6 @@ header, section, footer, aside, nav, main, article, figure {
     @media only screen and ( min-width: 1280px ) {
       .navbar__ul {
         min-width: 1130px;
-        /*height: 30px;*/
       }
 
       .navbar__li {
@@ -530,10 +525,7 @@ header, section, footer, aside, nav, main, article, figure {
       .navbar__li a {
         font-size: 16px;
       }
-
     }
-
-
 
     @media only screen and ( min-width: 1680px ) {
       .navbar__ul {
@@ -559,7 +551,6 @@ header, section, footer, aside, nav, main, article, figure {
 
     /* banner--------- */
     .banner {
-      /* max-width: 1544px; */
       height: 400px;
       background-image: url("../image/banner.jpg");
       background-size: cover;
