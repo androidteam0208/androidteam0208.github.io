@@ -398,9 +398,6 @@ header, section, footer, aside, nav, main, article, figure {
       .navbar {
         display: none;
       }
-      /*header__menuicon:active{*/
-      /*  display: block;*/
-      /*}*/
 
     }
 
@@ -441,7 +438,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .dropdown-content a {
-        padding: 0px 2px;
+        padding: 0px 25px;
       }
     }
     @media only screen and ( min-width: 1024px ) {
