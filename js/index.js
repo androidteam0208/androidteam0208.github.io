@@ -63,8 +63,16 @@ function addEventClick() {
     }
 
 }
-
 addEventClick();
+//when click out item menu with class dropbtn -> hide dropdown content
+window.addEventListener("click", function(event){
+    let contents = document.getElementsByClassName('dropdown-content');
+    if (!event.target.matches(".dropbtn")){
+        for (let i = 0; i < contents.length; i++) {
+            contents[i].classList.remove("show");
+        }
+    }
+});
 
 
 
