@@ -1,753 +1,1098 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>City</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Light Layout</title>
 
+    <!-- Popper JS -->
+    <script src="./js/vendors/popper.min.js"></script>
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- owlcaroulsel -->
+    <link rel="stylesheet" href="./css/vendors/bootstrap.min.css">
+    <script src="./js/vendors/jquery/jquery.min.js"></script>
+    <script src="./js/vendors/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="./css/index.css">
+   
     <!-- font face -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/fuw2zkc.css">
-    <!-- icon -->
-
-    <!-- font awesome 5 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!-- font awesome 4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Style -->
-    <link rel="stylesheet" href="./style/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/vendors/animate.css">
 </head>
 
 <body>
-<div class="cover">
-    <!--Start Header-->
+    <!-- Header -->
     <header class="header">
-        <div class="header__content">
-            <span class="header__menuicon" id="menuicon" onclick="checkIcon()"><a href="#"><i
-                    class="fa fa-bars"></i></a></span>
-            <span class="header__logo"><a href="#"><img src="./image/logo.png" alt="city"></a></span>
-            <div class="header__form">
-                <input type="text" placeholder="Search" class="header__input">
-                <button class="header__search"><i class="fa fa-search icon"></i></button>
-            </div>
-            <span class="header__icon icon"><a href="#"><i class="fa fa-user"></i></a></span>
+        <div class="header-navbar">
+
+            <nav class="navbar navbar-expand-md header-nav   ">
+
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./image/testimonial/logo.png" alt="">
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon text-white"><i class="fa fa-bars"></i></span>
+                </button>
+
+                <!-- <div class=""  > -->
+                    <ul class="navbar-nav navbar-custom collapse navbar-collapse" id="collapsibleNavbar">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#" style="color: orange">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MY SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RECOMMENTDATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WORKS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">NETWORK <i class="fa fa-caret-down"></i></a>
+                            <form class="dropdown-menu form-login" role="form">
+                                <a class="btn btn-social twitter" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                    Twitter Login
+                                </a>
+                                <a class="btn btn-social facebook" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook Login</a>
+                                <a class="btn btn-social gplus" href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                    Gplus Login
+                                </a>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+                <!-- Links -->
+            </nav>
         </div>
     </header>
-    <!-- end header -->
 
-    <!-- Start Thanh navbar -->
-    <div class="navbar" id="nav">
-        <ul class="navbar__ul" id="nav__ul">
-            <li class="navbar__li four_item dropdown" id="nav__li">
-                <a href="#" class="dropbtn">WoOw!<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-cutlery"></i> &nbsp;Gastronomía</span></a>
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-            <li class="navbar__li four_item dropdown">
-                <a href="#" class="dropbtn">City!<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más <Ser></Ser>vicios</span></a>
+    <section>
+        <!--article banner ò home -->
+        <article class="home">
+            <!-- <div class="banner__container"> -->
+            <div id="myCarousel" class="carousel slide " data-ride="carousel">
 
-                </div>
-
-            </li>
-            <li class="navbar__li four_item dropdown">
-                <a href="#" class="dropbtn">Shop!<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                </div>
-            </li>
-            <li class="navbar__li four_item dropdown">
-                <a href="#" class="dropbtn">Travel!<i class="fa fa-caret-down"></i></a></i>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Gastronomia!<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Estetica Y BienEsta<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Peluqueria<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Cetelera<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Tiempo Libre<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Autos<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Cursos<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-asterisk"></i> &nbsp;Estética y Bienestar</span></a>
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-            <li class="navbar__li dropdown">
-                <a href="#" class="dropbtn">Masorvios<i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#"><span><i class="fa fa-bell"></i> &nbsp;Peluquería</span></a>
-                    <a href="#"><span><i class="fa fa-optin-monster"></i> &nbsp;Cartelera</span></a>
-                    <a href="#"><span><i class="fa fa-car"></i> &nbsp;Autos</span></a>
-                    <a href="#"><span><i class="fa fa-motorcycle"></i> &nbsp;Más Servicios</span></a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- end navbar -->
-
-    <!--start banner image-->
-    <section class="banner">
-        <div class="banner__content">
-            <!-- title -->
-            <h2 class="banner__title ">Reservá tu restaurante.</h2>
-            <!-- text -->
-            <p class="banner__text">Mediterráneos, japoneses y de sushi, románticos, con menú, con ofertas... Y
-                muscho
-                mas , al mejor precio ! </p>
-
-            <!-- nav of selected input and buuton -->
-            <div class="banner__bar">
-                <div class="banner__input">
-                    <label for="fecha" class="banner__label">Fecha</label>
-                    <br/>
-                    <select name="fecha" id="fecha" class="select">
-                        <option value="1">Cualquier fecha</option>
-                    </select>
-                </div>
-                <div class="banner__input">
-                    <label for="Barrio" class="banner__label">Barrio</label>
-                    <br/>
-                    <select name="Barrio" id="Barrio" class="select">
-                        <option value="1">Cualquier barrio</option>
-                    </select>
-                </div>
-                <div class="banner__input">
-                    <label for="Tipo" class="banner__label">Tipo de comida </label>
-                    <br/>
-                    <select name="Tipo" id="Tipo" class="select">
-                        <option value="1"><a href="#">Cualquier tipo de comida </a></option>
-                    </select>
-                </div>
-                <div class="banner__input">
-                    <br/>
-                    <button class="banner__button select "><a href="#">Buscar</a></button>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- end banner image -->
-
-    <!--start gallery  -->
-    <section class="gallery">
-        <p class="gallery__title title">Inspirate con nuestras selecciones en</p>
-        <div class="gallery__content">
-            <div class="gallery__col">
-                <div class="gallery__item item1">
-                    <a href="#"><img src="./image/catalog1.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>A la carta</b></p>
-                            <p>32 restaurantes</p>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="gallery__item item5">
-                    <a href="#">
-                        <img src="./image/catalog2.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>Café y antojos</b></p>
-                            <p>35 restaurantes</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="gallery__col">
-                <div class="gallery__item item2">
-                    <a href="#">
-                        <img src="./image/catalog3.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>Parrilla</b></p>
-                            <p>25 restaurantes</p>
-                        </div>
-                    </a>
-
-
-                </div>
-                <div class="gallery__item item6">
-                    <a href="#">
-                        <img src="./image/catalog4.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p>Sushi</p>
-                            <p>16 restaurantes</p>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="gallery__col">
-                <div class="gallery__item item3">
-                    <a href="#">
-                        <img src="./image/catalog5.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>Buffet</b></p>
-                            <p>37 restaurantes</p>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="gallery__item item7">
-                    <a href="#">
-                        <img src="./image/catalog6.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>Minutas</b></p>
-                            <p>16 restaurantes</p>
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-            <div class="gallery__col">
-                <div class="gallery__item item4">
-                    <a href="#">
-                        <img src="./image/catalog7.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>Confitería y festejos</b></p>
-                            <p>37 restaurantes</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="gallery__item item8">
-                    <a href="#">
-                        <img src="./image/catalog8.jpg" alt="" class="imageCatalog"></a>
-                    <a href="#">
-                        <div class="item__content">
-                            <p><b>Tienda</b></p>
-                            <p>120 restaurantes</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- end catelory -->
-
-    <!-- start slider -->
-    <section class="slider">
-        <div class="slider__header">
-            <p class="title slider__title">¿Donde vamos a comer?</p>
-            <p class="slider__text">Los mejores planes gastronómicos del momento</p>
-        </div>
-
-        <div class="slider__content">
-
-            <!-- item1 -->
-            <div class="slider__item item1">
-                <!-- phan tren cua slide -->
-                <div class="item__top">
-                    <!--phan giam gia tren goc phai  -->
-                    <p class="item__discount">-20%</p>
-                    <!-- phan hinh anh -->
-                    <a href="#">
-                        <img src="./image/slider1.jpg" alt="" class="imageslider"></a>
-                    <!-- noi dung cua hinh -->
-                    <div class="item__content">
-                        <!-- phan tieu de cua 1 item trong slider -->
-                        <p><a href="#" class="item__title">La Pasiva</a></p>
-                        <p><a href="#" class="item__decript">Buceo | Gastronomía</a></p>
-                        <!-- phan số  mau do item trong slider -->
-                        <span class="item__number">6</span>
-                        <!-- phan diem  -->
-                        <span class="item__point">Bueno (50 opiniones)</span>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner ">
+                    <div class="carousel-item item active">
+                        <h2 class = "wow fadeInDownBig">ProResume Landing Page <br>something you love</h2>
+                        <h5 class = "wow fadeInUpBig" >It's easy when you're doingsomething you love.</h5>
+                        <a href="demo.pdf" download="demo.pdf" class="wow flipInY">
+                            <button class="button button-download ">
+                                <!-- <i class="fa fa-download"></i> -->
+                                <span>
+                                    <i class="fa fa-download"></i>
+                                    Download Resume
+                                </span>
+                            </button>
+                        </a>
                     </div>
-                </div>
-
-                <!-- div chứa phần resrer (footer cua item) -->
-                <div class="item__reser">
-                    <p>Desde</p>
-                    <span class="reser__cost"> $800</span>
-                    <button class="reser__button"><a href="#">Reservar</a></button>
-                </div>
-
-            </div>
-
-            <!-- item 2 -->
-            <div class="slider__item item2">
-                <div class="item__top">
-                    <p class="item__discount">-20%</p>
-                    <!-- phan hinh anh -->
-                    <a href="#">
-                        <img src="./image/slider2.jpg" alt="" class="imageslider"></a>
-                    <div class="item__content">
-                        <!-- phan tieu de cua 1 item trong slider -->
-                        <p><a href="#" class="item__title">Temaki Sushi</a></p>
-                        <p><a href="#" class="item__decript">Punta Carretas | Gastronomía</a></p>
-                        <span class="item__number">10</span>
-                        <span class="item__point">Excelente! (1450 opiniones)</span>
+                    <div class="carousel-item item ">
+                        <h2>ProResume Landing Page <br>something you love</h2>
+                        <h5>It's easy when you're doingsomething you love.</h5>
+                        <a href="demo.pdf" download="demo.pdf">
+                            <button class="button button-download ">
+                                <!-- <i class="fa fa-download"></i> -->
+                                <span>
+                                    <i class="fa fa-download"></i>
+                                    Download
+                                </span>
+                            </button>
+                        </a>
                     </div>
 
                 </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
 
-                <!-- div chứa phần resrer (footer cua item) -->
-                <div class="item__reser">
-                    <p>Desde</p>
-                    <span class="reser__cost"> $500</span>
-                    <button class="reser__button"><a href="#">Reservar</a></button>
+            </a>
+
+            <!-- </div> -->
+        </article>
+        <!-- article skill and experties-->
+        <article class="features ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="features__title wow fadeInUp">SKILLS &amp; EXPERTISE</h2>
+                        <h6 class="wow fadeInUp">Visual Designer. Front-end Developer. C# Programmer.</h6>
+                        <figure class="feature__image wow fadeInLeft">
+                            <img src="./image/testimonial/profile_img.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-md-6 features__top">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6 features__item wow fadeInDown">
+                                <div>
+                                    <div>
+                                        <a class="features__icon" href=""><i class="fa fa-lightbulb"></i></a>
+                                    </div>
+                                    <h4>Branding</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 features__item wow fadeInDown">
+                                <div>
+                                    <div>
+                                        <a class="features__icon" href=""><i class="fa fa-desktop"></i></a>
+                                    </div>
+
+                                    <h4>Marketing</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6 features__item wow fadeInDown">
+                                <div>
+                                    <div>
+                                        <a class="features__icon" href=""><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+
+                                    <h4>Design</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 features__item wow fadeInDown">
+                                <div>
+                                    <div>
+                                        <a class="features__icon" href=""><i class="fa fa-code"></i></a>
+                                    </div>
+
+                                    <h4>Programming</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                        <div class="features__bottom ">
+                            <h3 class="wow fadeInUp  ">
+                                <strong>Smart Digital Solutions</strong> A Front-End Developer Based in London
+                            </h3>
+                            <figure class="wow slideInRight">
+                                <span>
+                                    <a href="">
+                                        <img src="./image/testimonial/device01.png" alt="">
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <img src="./image/testimonial/device02.png" alt="">
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <img src="./image/testimonial/device03.png" alt="">
+                                    </a>
+                                </span>
+                            </figure>
+                            
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
 
-            <!-- item3 -->
-            <div class="slider__item item3">
-                <div class="item__top">
-                    <!--phan giam gia tren goc phai  -->
-                    <p class="item__discount">-20%</p>
-                    <!-- phan hinh anh -->
-                    <a href="#">
-                        <img src="./image/slider3.jpg" alt="" class="imageslider"></a>
-                    <div class="item__content">
-                        <p><a href="#" class="item__title">Francis</a></p>
-                        <p><a href="#" class="item__decript">Punta Carretas| Gastronomía</a></p>
-                        <span class="item__number">8</span>
-                        <span class="item__point">Muy bueno (550 opiniones)</span>
+        </article>
+        <!--article experience -->
+        <article class="experience">
+            <div class="container">
+                <h2 class="experience__title wow fadeInUp">Work experience</h2>
+                <h6 class="experience__decript wow fadeInUp">I'm looking to expand my portfolio while I'm on top and while I'm young.
+                    Johnny doe brings your
+                    content to life in stunning clarity</h6>
+                <div class="row cv-section">
+                    <div class="col-md-3">
+                        <div class="cv-section-title wow fadeInLeft">
+                            <h1>
+                                <span>
+                                    2016
+                                    <small>January</small>
+                                </span>
+                                -
+                                <span>Present</span>
+                            </h1>
+                            <h3>Graphic Corner</h3>
+                            <p>
+                                2013 - 2014 Senior Graphic Designer <br>
+                                2014 - 2015 Project Manager
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="cv-item wow fadeInRight">
+
+                            <h3>Job Description</h3>
+
+                            <p>
+                                Senior Graphic Designer<br>
+                                Phasellus nec gravida purus. Aliquam ac enim vel ipsum consectetur vulputate. Duis quis
+                                feugiat neque.
+                                Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam, ut faucibus
+                                lorem mi a lacus.
+                                Nulla luctus, urna eu congue pellentesque, sapien arcu interdum lorem.
+                            </p>
+
+                            <p>
+                                Art Director<br>
+                                Donec mollis venenatis pulvinar. Mauris leo odio, euismod at tellus ac, tincidunt
+                                vulputate velit. Aenean
+                                eget tortor feugiat, facilisis arcu a, commodo felis. Fusce imperdiet nisl urna, quis
+                                elementum sapien
+                                hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare. Fusce imperdiet nisl
+                                urna, quis
+                                elementum sapien hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-section">
+                    <div class="col-md-3">
+                        <div class="cv-section-title wow fadeInLeft">
+
+                            <h1>
+                                <span>
+                                    2005
+                                    <small>March</small>
+                                </span>
+                                -
+                                <span>
+                                    2006
+                                    <small>February</small>
+                                </span>
+                            </h1>
+
+
+                            <h3>Creative Media</h3>
+
+                            <p>Junior Graphic Designer</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="cv-item wow fadeInRight">
+
+                            <h3>Job Description</h3>
+
+                            <p>
+                                Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula
+                                felis nec, commodo risus. Aliquam congue dignissim tempus. Nullam pharetra urna
+                                facilisis tellus vulputate, ac vehicula quam tempus. Interdum et malesuada fames ac ante
+                                ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla
+                                dapibus felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim
+                                adipiscing leo quis sagittis. Aenean vitae turpis lectus. Suspendisse porttitor
+                                vulputate scelerisque.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-section">
+                    <div class="col-md-3">
+                        <div class="cv-section-title wow fadeInLeft">
+                            <h1>
+                                <span>
+                                    2006
+                                    <small>March</small>
+                                </span>
+                                -
+                                <span>
+                                    2010
+                                    <small>July</small>
+                                </span>
+                            </h1>
+
+                            <h3>Creatika Agency</h3>
+
+                            <p>
+                                2006 - 2008 Senior Graphic Designer <br>
+                                2008 - 2010 Project Manager
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="cv-item wow fadeInRight">
+
+                            <h3>Job Description</h3>
+
+                            <p>
+                                Senior Graphic Designer<br>
+                                Phasellus nec gravida purus. Aliquam ac enim vel ipsum consectetur vulputate. Duis quis
+                                feugiat neque.
+                                Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam, ut faucibus
+                                lorem mi a lacus.
+                                Nulla luctus, urna eu congue pellentesque, sapien arcu interdum lorem.
+                            </p>
+
+                            <p>
+                                Art Director<br>
+                                Donec mollis venenatis pulvinar. Mauris leo odio, euismod at tellus ac, tincidunt
+                                vulputate velit. Aenean
+                                eget tortor feugiat, facilisis arcu a, commodo felis. Fusce imperdiet nisl urna, quis
+                                elementum sapien
+                                hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare. Fusce imperdiet nisl
+                                urna, quis
+                                elementum sapien hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </article>
+        <!--article education -->
+        <article class="education" id="#">
+            <div class="container">
+
+                <h2 class="education__title wow fadeInUp">Education</h2>
+                <h6 class="wow fadeInUp">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your
+                    content to life in stunning clarity</h6>
+
+                <div class="row cv-section">
+                    <div class="col-md-3">
+                        <div class="cv-section-title wow fadeInLeft">
+                            <h1>
+                                <span>
+                                    2004
+                                    <small>September</small>
+                                </span>
+                                -
+                                <span>
+                                    2008
+                                    <small>June</small>
+                                </span>
+                            </h1>
+
+                            <h3>New York State Univerity</h3>
+
+                            <p>Advance Graphic Designer</p>
+
+                            <h3>3.9 GPA</h3>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="cv-item wow fadeInRight">
+
+                            <h3>School Profile Description</h3>
+
+                            <p>
+                                Phasellus nec gravida purus. Aliquam ac enim vel ipsum consectetur vulputate. Duis quis
+                                feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium
+                                quam, ut faucibus lorem mi a lacus. Nulla luctus, urna eu congue pellentesque, sapien
+                                arcu interdum lorem, eu mollis nisi nunc in nulla. Donec mollis venenatis pulvinar.
+                                Mauris leo odio, euismod at tellus ac, tincidunt vulputate velit. Aenean eget tortor
+                                feugiat, facilisis arcu a, commodo felis. Fusce imperdiet nisl urna, quis elementum
+                                sapien hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare. Suspendisse
+                                potenti. Fusce interdum commodo velit non vestibulum. Aenean ut porttitor sapien, vitae
+                                mattis felis. Etiam quis tellus id lectus laoreet interdum.
+                            </p>
+
+                        </div>
                     </div>
                 </div>
 
-                <!-- div chứa phần resrer (footer cua item) -->
-                <div class="item__reser">
-                    <p>Desde</p>
-                    <span class="reser__cost"> $1250</span>
-                    <button class="reser__button"><a href="#">Reservar</a></button>
+                <div class="row cv-section">
+                    <div class="col-md-3">
+                        <div class="cv-section-title wow fadeInLeft">
+                            <h1>
+                                <span>
+                                    2000
+                                    <small>September</small>
+                                </span>
+                                -
+                                <span>
+                                    2004
+                                    <small>June</small>
+                                </span>
+                            </h1>
+
+
+                            <h3>School of the Arts</h3>
+
+                            <p>Visaul Arr &amp; Design</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="cv-item wow fadeInRight">
+
+                            <h3>School Profile Description</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis
+                                arcu at, lacinia ligula. Praesent bibendum eros ut nulla adipiscing, tempus tincidunt
+                                tellus scelerisque. Quisque quis laoreet lacus. Praesent laoreet nulla elit, et
+                                pellentesque ligula fermentum id. Quisque vulputate bibendum rhoncus. Nam vestibulum
+                                euismod elementum. Etiam consequat dolor quis libero pulvinar, sit amet viverra turpis
+                                imperdiet. Ut vitae sagittis purus. In metus nisi, sollicitudin a ligula a, viverra
+                                volutpat turpis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- end slider content -->
+        </article>
+        <!--article reference -->
+        <article class="testimonials" id="menu_rec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wow fadeInUp">
+                            References</h2>
+                    </div>
+                </div>
+                <div id="carousel-testimonials" class="owl-carousel carousel slide">
+                    <div class="carousel-inner wow fadeInUp">
+                        <div class="carousel-item item active">
+                            <figure>
+                                <a href="#"><i class="fa fa-quote-right"></i></a>
+                                <img
+                                    src="./image/testimonial/testimonial1.jpg">
+                            </figure>
+                            <h3 class="text-white " style="font-weight: 200">"As always, great creative thinking
+                                for the best solution.
+                                Johnny is by far the
+                                most professional and knowledgeable provider I worked with. I will hire him
+                                again :)"</h3>
+                            <h5>Mike Banderoe</h5>
+                        </div>
+                        <div class="carousel-item item wow fadeInUp">
+                            <figure>
+                                <a href="#"><i class="fa fa-quote-right"></i></a>
+                                <img
+                                src="./image/testimonial/testimonial2.jpg">
+                            </figure>
+                            <h3 class="text-white">"As always, great creative thinking for the best solution.
+                                Johnny is by far the
+                                most professional and knowledgeable provider I worked with. I will hire him
+                                again :)"</h3>
+                            <h5>Neal Doent</h5>
+                        </div>
+                        <div class=" carousel-item item wow fadeInUp">
+                            <figure>
+                                <a href="#"><i class="fa fa-quote-right"></i></a>
+                                <img
+                                src="./image/testimonial/testimonial3.jpg">
+                            </figure>
+                            <h3 class="text-white">"As always, great creative thinking for the best solution.
+                                Johnny is by far the
+                                most professional and knowledgeable provider I worked with. I will hire him
+                                again :)"</h3>
+                            <h5>Peter Parker</h5>
+                        </div>
+                    </div>
 
+                </div>
+                <ol class="carousel-indicators" >
+                    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                </ol>
+
+            </div>
+            </div>
+        </article>
+
+        <!-- grid my ls work -->
+        <article class="work">
+            <div class="container">
+                <h2 class="wow fadeInUp">My latest work</h2>
+                <h6 class="wow fadeInUp">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your
+                    content to life in stunning clarity</h6>
+                <div class="work__filter">
+                    <a href="#" class="btn btn-filter active wow bounceIn ">Show All</a>
+                    <a href="#" class="btn btn-filter wow bounceIn">Iphone</a>
+                    <a href="#" class="btn btn-filter wow bounceIn">Android</a>
+                    <a href="#" class="btn btn-filter wow bounceIn">Ipad</a>
+                    <a href="#" class="btn btn-filter wow bounceIn">Iwatch</a>
+                </div>
+                <div class="work__grid ">
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program01.jpg" alt="" ></a>
+                            <div class="left__cover">
+                                <p><i class="fa fa-plus"></i></p>
+                                
+                            </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 01</h3>
+                            <p>Iphone</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program02.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 02</h3>
+                            <p>Android</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program03.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 03</h3>
+                            <p>Ipad</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program04.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 04</h3>
+                            <p>Iwatch</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program05.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 04</h3>
+                            <p>Iwatch</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program06.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 04</h3>
+                            <p>Iwatch</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program07.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 04</h3>
+                            <p>Iwatch</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program08.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p><i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 04</h3>
+                            <p>Iwatch</p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="item__left">
+                            <a href=""><img src="./image/app/program09.jpg" alt=""></a>
+                            <div class="left__cover">
+                                    <p>
+                                        <i class="fa fa-plus"></i></p>
+                                    
+                                </div>
+                        </div>
+                        <div class="item__right">
+                            <h3>App title 04</h3>
+                            <p>Iwatch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- article skill & knowwledge -->
+        <article class="knowledge">
+            <div class="container">
+                <h2 class="wow fadeInUp">Skills &amp; Knowledge</h2>
+                <h6 class="wow fadeInUp">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your
+                    content to life in stunning clarity</h6>
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <h3>Software</h3>
+                        <div class="horizontal-bar wow fadeInUp">
+                            <p>Photoshop</p>
+                            <div class="content-bar">
+                                <div class="progress " >
+                                    <div class="progress-bar">
+                                        <span>86%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Corel Draw</p>
+                            <div class="content-bar">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 73%;">
+                                        <span>73%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Adobe Illustrator</p>
+                            <div class="content-bar">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 79%;">
+                                        <span>79%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Adobe InDesign</p>
+                            <div class="content-bar">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 57%;">
+                                        <span>57%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Cinema 4D</p>
+                            <div class="content-bar">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 33%;">
+                                        <span>33%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+
+                        <h3 class="text-uppercase wow fadeInUp">Recognitions</h3>
+
+                        <div class="icon-box-1 wow fadeInUp">
+                            <i class="fa fa-image"></i>
+
+
+                            <div class="icon-box-content">
+
+                                <h4>International Design Awards 2014</h4>
+
+                                <p>
+                                    15 March 2014 / New York State University<br>
+                                    Place: 3
+                                </p>
+
+                            </div><!-- end .icon-box-content -->
+
+                        </div><!-- end .icon-box-1 -->
+
+                        <div class="icon-box-1 wow fadeInUp">
+
+                            <i class="fa fa-pen"></i>
+
+                            <div class="icon-box-content">
+
+                                <h4>Logo Design Contest Cicago 2013</h4>
+
+                                <p>
+                                    12 October 2013 / Chicago House of Art<br>
+                                    Place: 2
+                                </p>
+
+                            </div><!-- end .icon-box-content -->
+
+                        </div><!-- end .icon-box-1 -->
+
+                        <div class="icon-box-1 wow fadeInUp">
+
+                            <i class="fa fa-briefcase"></i>
+
+                            <div class="icon-box-content">
+
+                                <h4>Web Design Contest New York 2013</h4>
+
+                                <p>
+                                    12 October 2013 / New York Technology Office<br>
+                                    Place: 2
+                                </p>
+
+                            </div><!-- end .icon-box-content -->
+
+                        </div><!-- end .icon-box-1 -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+
+                        <h3 class="text-uppercase wow fadeInUp">Language Skills</h3>
+
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-4 language-circle">
+                                <div class="pie-chart wow fadeInUp">
+                                    <span class="pie-chart-custom-text">
+                                        <span>English <br> Experienced</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-4 language-circle">
+                                <div class="pie-chart wow fadeInUp">
+                                    <span class="pie-chart-custom-text">
+                                        <span>French</span><br />Advanced</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-4 language-circle">
+                                <div class="pie-chart wow fadeInUp">
+                                    <span class="pie-chart-custom-text">
+                                        <span>German</span><br />Basic</span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+
+                        <h3 class="text-uppercase wow fadeInUp">Knowledge</h3>
+
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 wow fadeInUp">
+                                <ul class="check " style="list-style-type: none">
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Google Analythics
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Instal and Configure
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        E-commerce Platform
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Color theory
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Web Usability
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Grid &amp; Layout
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-xs-6 wow fadeInUp">
+                                <ul class="check " style="list-style-type: none">
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Photo manipulation</li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Digital Painting</li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Photo Composition</li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Good Tipography</li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Portrait Retouching</li>
+                                    <li>
+                                        <i class="fa fa-check"></i> &nbsp;
+                                        Video Editing</li>
+                                </ul>
+                            </div>
+                        </div><!-- end .row -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <h3 class="text-uppercase wow fadeInUp">Hobbies &amp; Interests</h3>
+
+                        <ul class="interests-list wow fadeInUp">
+                            <li>
+                                <p> <i class="fa fa-spinner"></i> &nbsp; Sports</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-spinner"></i>
+                                    <strong>Sports</strong>
+                                    <p>Lorem ipsum dolor sit amet, sagittis arcu diam elit. Morbi vitae sem laoreet
+                                        mattis egestas nunc eget elit.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-camera-retro"></i>&nbsp;Photography</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-camera-retro"></i>
+                                    <strong>Photography</strong>
+                                    <p>Praesent bibendum eros ut nulla adipiscing, tempus tincidunt tellus scelerisque
+                                        quisque quis laoreet lacus.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-file"></i>&nbsp;Marketing</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-file"></i>
+                                    <strong>Marketing</strong>
+                                    <p>Praesent laoreet nulla elit, et pellentesque ligula fermentum id. Quisque
+                                        vulputate bibendum.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-film"></i> &nbsp; Movies</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-film"></i>
+                                    <strong>Movies</strong>
+                                    <p>Nam vestibulum euismod elementum. Etiam consequat dolor quis libero pulvinar, sit
+                                        amet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-star"></i>&nbsp; Fashion</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-star"></i>
+                                    <strong>Fashion</strong>
+                                    <p>Praesent tristique mattis leo, vel lobortis felis. Phasellus purus neque, euismod
+                                        a pretium pulvinar placerat.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-desktop"></i> &nbsp;Technology</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-desktop"></i>
+                                    <strong>Technology</strong>
+                                    <p>Suspendisse dignissim nisi non velit interdum, in condimentum augue varius.
+                                        Nullam ac eu lacus rhoncus.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-plane"></i> &nbsp; Travel</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-plane"></i>
+                                    <strong>Travel</strong>
+                                    <p>Fusce pretium auctor bibendum. Suspendisse rutrum rhoncus purus sed dapibus.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-history"></i> &nbsp;History</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-history"></i>
+                                    <strong>History</strong>
+                                    <p>Quisque id sapien sed urna lobortis rutrum eu sed enim. Duis orci velit, pulvinar
+                                        eu nisl non porta lacus.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-music"></i> &nbsp; Music</p>
+                                <div class="interest-details">
+                                    <i class="fa fa-music"></i>
+                                    <strong>Music</strong>
+                                    <p>Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum,
+                                        vehicula felis nec commodo.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- article youtube and number -->
+        <article class="numbers" id="youtubevideo" >
+            <div class="mbYTP_wrapper" >
+                <iframe  class="playerBox" 
+                    src="https://www.youtube.com/embed/OGzR4QLVTK0?autoplay=1&mute=1&loop=1&autopause=0" allow="autoplay" allowfullscreen></iframe>
+                <div class="YTPOverlay">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 item wow  fadeInUpBig"  data-wow-delay="0.2s">
+                        <span><i class="fa fa-trophy"></i></span>
+                        <h3>230</h3>
+                        <p>Awards Won</p>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 item wow fadeInUpBig " 
+                        data-wow-delay="0.4s">
+                        <span><i class="fa fa-thumbs-up"></i></span>
+                        <h3>4.100</h3>
+                        <p>Happy Customers</p>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 item wow fadeInUpBig " 
+                        data-wow-delay="0.6s">
+                        <span><i class="fa fa-rocket"></i></span>
+                        <h3>24</h3>
+                        <p>Projects Done</p>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 item wow fadeInUpBig " 
+                        data-wow-delay="0.8s">
+                        <span><i class="fa fa-camera"></i></span>
+                        <h3>424</h3>
+                        <p>Photos Made</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- article custommer  -->
+        <article class="plans" id="menu_customers">
+            <div class="container">
+
+                <div class="row channels" id="menu_clients">
+                    <div class="col-md-5">
+                        <h2 class="wow fadeInUp">My customers</h2>
+                        <h6 class="wow fadeInUp">The best books to keep you reading consectetur adipisicing elit.
+                            Hic, laborum, reprehenderit, nesciunt sapiente assumenda ab beatae velit ea perspiciatis
+                            animi unde officia odit.</h6>
+                    </div>
+                    <div class="col-md-7">
+                        <a class="brands wow rotateInDownRight " href="#" data-wow-delay="0.2s">
+                            <img src="./image/brands/logo-1.png">
+                        </a>
+                        <a class="brands wow rotateInDownRight" href="#"data-wow-delay="0.3s">
+                            <img src="./image/brands/logo-2.png">
+                        </a>
+                        <a class="brands wow rotateInDownRight" href="#" data-wow-delay="0.4s">
+                            <img src="./image/brands/logo-5.png" >
+                        </a>
+
+                        <a class="brands wow rotateInDownRight" href="# " data-wow-delay="0.5s">
+                            <img src="./image/brands/logo-3.png">
+                        </a>
+                        <a class="brands wow rotateInDownRight" href="#" data-wow-delay="0.6s">
+                            <img src="./image/brands/logo-4.png">
+                        </a>
+                        <a class="brands wow rotateInDownRight" href="#" data-wow-delay="0.7s">
+                            <img src="./image/brands/logo-1.png">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- article end of section -->
+        <article class="subscribe" id="menu_contact">
+            <div class="container" style="text-align: center">
+                <h2 class="wow fadeInUp ">CONTACT ME</h2>
+                <h6 class="wow fadeInUp " data-wow-delay="0.4s">Have a project you'd like to discuss?</h6>
+                <span class="divider center wow fadeInUp" data-wow-delay="0.2s"></span>
+                <div class="ct-bubble wow fadeInUp" data-wow-delay="0.6s">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h2 class="name wow  fadeInUp" data-wow-delay="0.8s">Johnny Doe</h2>
+                <h6 class="text-center wow fadeInUp" data-wow-delay="0.4s">johnnydoe@demo.com
+                </h6>
+                <span class="divider center bottom wow fadeInUp" data-wow-delay="0.8s"></span>
+            </div>
+        </article>
     </section>
-    <!-- end slider -->
-
-    <!-- start menu -->
-    <section class="menu">
-
-        <!-- menu col1 -->
-        <div class="menu__col col1">
-            <p class="menu__title">
-                <a href="#">
-                    <img src="./image/fire.png" alt="">
-                    Los más vendidos</a>
-            </p>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">La Pasiva</a></p>
-                    <p class="item_decript"><a href="#">Buceo | Gastronomía</a></p>
-                    <span class="item__number">8</span>
-                    <span class="item__point"><a href="#">Muy bueno (550 opiniones)</a></span>
-                    <span class="item__cost">
-                            Desde <b>$890</b>
-                        </span>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-8">
+                    <nav class="navbar navbar-expand-sm" role="navigation">
+                        <ul class="navbar-nav menu-effect ">
+                            <li class=" nav-item"><a href="#">Home</a></li>
+                            <li class=" nav-item"><a href="#">My Skills</a></li>
+                            <li class=" nav-item"><a href="#">Recommendation</a></li>
+                            <li class=" nav-item"><a href="#">Customers</a></li>
+                            <li class=" nav-item"><a href="#">Works</a></li>
+                            <li class=" nav-item"><a href="" class="active">Contact Form</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-5 col-lg-4 footer__right">
+                    <ul class="social">
+                        <li class="wow fadeIn" data-wow-delay="0.2s"><a href="#" data-original-title="Flickr">
+                                <i class="fab fa-flickr"></i>
+                            </a></li>
+                        <li class="wow fadeIn" data-wow-delay= "0.4s"><a href="#" data-original-title="Vimeo">
+                                <i class="fab fa-vimeo-v"></i>
+                            </a></li>
+                        <li class="wow fadeIn" data-wow-delay= "0.6s"><a href="#" data-original-title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                        <li class="wow fadeIn" data-wow-delay= "0.8s"><a href="#" data-original-title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a></li>
+                        <li class="wow fadeIn" data-wow-delay= "1s"><a href="#" data-original-title="Google +">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a></li>
+                        <li class="wow fadeIn" data-wow-delay=" 1.2s"><a href="#" data-original-title="Linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a></li>
+                        <li class="wow fadeIn" data-wow-delay=" 1.4s"><a href="#" data-original-title="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Temaki Sushi</a></p>
-                    <p class="item_decript"><a href="#">Pocitos | Gastronomía</a></p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$500</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Francis</a></p>
-                    <p class="item_decript"><a href="#">Punta Carretas| Gastronomía</a></p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$1250</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">La casa violeta</a></p>
-                    <p class="item_decript"><a href="#">Carrasco | Gastronomía</a></p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (50 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$990</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Jhonny Rockets</a></p>
-                    <p class="item_decript"><a href="#">Centro | Gastronomía</a></p>
-                    <span class="item__number">10</span>
-                    <span class="item__point">Excelente! (1550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$250</b>
-                        </span>
-                </div>
-            </div>
-        </div>
-        <!-- end menu col1 -->
-        <!-- menu col2 -->
-        <div class="menu__col col2">
-            <p class="menu__title">
-                <a href="#"><img src="./image/star.png" alt=""></a>
-                Mejor puntuados
-            </p>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">La Pasiva</a></p>
-                    <p class="item_decript"><a href="#">Buceo | Gastronomía</a></p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Muy bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$890</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Temaki Sushi</a></p>
-                    <p class="item_decript"><a href="#">Pocitos | Gastronomía</a></p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$500</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Francis</a></p>
-                    <p class="item_decript"><a href="#">Punta Carretas| Gastronomía</a></p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$1250</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">La casa violeta</a></p>
-                    <p class="item_decript"><a href="#">Carrasco | Gastronomía</a></p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (50 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$990</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Jhonny Rockets</a></p>
-                    <p class="item_decript"><a href="#">Centro | Gastronomía</a></p>
-                    <span class="item__number">10</span>
-                    <span class="item__point">Excelente! (1550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$250</b>
-                        </span>
-                </div>
-            </div>
-        </div>
-        <!-- end col2 -->
-
-
-        <!-- menu col3 -->
-        <div class="menu__col col3">
-            <p class="menu__title">
-                <a href="#"><img src="./image/card.png" alt="">
-                    Mejores descuentos</a>
-            </p>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">La Pasiva</a></p>
-                    <p class="item_decript"><a href="#">Buceo | Gastronomía</a></p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Muy bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$890</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Temaki Sushi</a></p>
-                    <p class="item_decript"><a href="#">Pocitos | Gastronomía</a></p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$500</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Francis</a></p>
-                    <p class="item_decript"><a href="#">Punta Carretas| Gastronomía</a></p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$1250</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">La casa violeta</a></p>
-                    <p class="item_decript"><a href="#">Carrasco | Gastronomía</a></p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (50 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$990</b>
-                        </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title"><a href="#">Jhonny Rockets</a></p>
-                    <p class="item_decript"><a href="#">Centro | Gastronomía</a></p>
-                    <span class="item__number">10</span>
-                    <span class="item__point">Excelente! (1550 opiniones)</span>
-                    <span class="item__cost">
-                            Desde <b>$250</b>
-                        </span>
-                </div>
-            </div>
-        </div>
-        <!-- end col2 -->
-    </section>
-    <!-- end menu -->
-    <!-- start registment (màu đỏ phía dưới) -->
-    <section class="registment">
-        <div class="registment__content">
-            <div class="registment__text">
-                <p>¿Tenés un restaurante?</p>
-                <p>Probá gratis nuestro sistema de gestión de reservas y clientes ¡y comenzá a sacarle el máximo
-                    partido
-                    a tu restaurante!</p>
-            </div>
-            <div class="registment__button">
-                <button><a href="#">Probalo gratis!</a></button>
-            </div>
-        </div>
-
-    </section>
-    <!-- footer -->
-    <section class="footer">
-        <div class="footer__contenttop">
-            <div class="footer__col col1">
-                <dl class="col__item">
-                    <dt><a href="#"><b>Encontrá lo que buscás!</b></a></dt>
-                    <dd><a href="#">Home</a></dd>
-                    <dd><a href="#">Restaurantes</a></dd>
-                    <dd><a href="#">Estética y bienestar</a></dd>
-                    <dd><a href="#">Tiempo librev</a></dd>
-                    <dd><a href="#">Travel</a></dd>
-                    <dd><a href="#">Shop</a></dd>
-                </dl>
-                <dl class="col__item">
-                    <dt><a href="#">Sumá tu empresa a woOw!</a></dt>
-                    <dd><a href="#">woOw! te puede llevar cientos de consumidores a tu puerta</a></dd>
-                    <dd>
-                        <a href="#">Contactanos aquí</a>
-                    </dd>
-                </dl>
-                <dl class="col__item">
-                    <dt><a href="#">Compras mayoristas</a></dt>
-                    <dd><a href="#">Ventas al por mayor. Si sos mayorista o estás interesado en comprar grandes
-                        cantidades
-                        escribenos a mayoristas@woow.com.uy
-                    </a></dd>
-                </dl>
-            </div>
-            <div class="footer__col col2">
-                <dl class="col__item">
-                    <dt><a href="#">Sobre Nosotros</a></dt>
-                    <dd><a href="#">¿Qué es woOw!?</a></dd>
-                    <dd><a href="#">Trabaja con nosotros</a></dd>
-                    <dd><a href="#">Términos y Condiciones (generales)</a></dd>
-                    <dd><a href="#">Política de Privacidad</a></dd>
-                    <dd><a href="#">Contacto</a></dd>
-                    <dd><a href="#">Sugerencias</a></dd>
-                    <dd><a href="#">woOw! Acerca</a></dd>
-                </dl>
-                <dl class="col__item">
-                    <dt><a href="#"> Contacto:</a></dt>
-                    <dd>
-                        <a href="#"><i class="fa fa-envelope-square"></i> info@woow.com.uy
-                        </a></dd>
-                    <dd>
-                        <a href="#"><i class="fa fa-phone-square"></i> (+598) 2408 5555
-                        </a></dd>
-                    <dd><a href="#">Marco Bruto 1373 esq. Rivera</a></dd>
-                    <br/>
-
-                    <dd><a href="#"><i class="fas fa-clock"></i><strong> Atención telefónica:</strong><br/>
-                        Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</a></dd>
-                    <br/>
-                    <dd>
-                        <a href="#"><i class="fas fa-clock"></i></a>
-                        <a href="#"><strong> Retiro de productos:</strong></a>
-                        <br><a href="#">Lunes a Viernes de 9a 20hs y Sábados de 10 a 15hs.
-                    </a></dd>
-                    <br/>
-                    <dd><a href="#">Envianos tu consulta</a></dd>
-                </dl>
-            </div>
-            <div class="footer__col col3">
-                <dl class="col__item">
-                    <dt><a href="#">Comprá con tranquilidad</a></dt>
-                    <dd><a href="#">woOw! es el 1er sitio de compras online de Uruguay que te permite obtener
-                        grandes descuentos.
-                    </a></dd>
-                    <br>
-                    <dd>
-                        <label><a href="#">¿Cómo funciona woOw!?</a></label>
-                    </dd>
-                    <dd><a href="#"><i class="fa fa-question-circle"></i> Preguntas Frecuentes</a></dd>
-                </dl>
-                <a href="#"> <img src="./image/footer.png" alt=""></a>
-            </div>
-        </div>
-
-        <div class="footer__contentbot">
-            <div class="footer__paypalSmall">
-                <input type="text" placeholder="woOw! es el 1er sitio de compras" class="paypal__input"/>
-                <br>
-                <input type="button" class="paypal__button" value="Susribrise"/>
-            </div>
-            <h3 class="footer__title">Comunicate con nosotros:</h3>
-            <div class="social__icons">
-                <a href="#"> <i class="fa fa-facebook-square"></i></a>
-                <a href="#"> <i class="fa fa-twitter"></i></a>
-                <a href="#"> <i class="fa fa-instagram"></i></a>
-                <a href="#"> <i class="fa fa-google-plus-square"></i></a>
-            </div>
-
-            <div class="footer__paypalBig">
-                <h3 class="footer__title">Tu compra segura con:</h3>
-                <ul class="paycard">
-                    <li><a href="#"><img alt="VISA"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-visa.png"></a></li>
-                    <li><a href="#"><img alt="MasterCard"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-mastercard-white.png"></a>
-                    </li>
-                    <li><a href="#"><img alt="Brou"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-ebrou.png"></a></li>
-                    <li><a href="#"><img alt="OCA"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-oca.png"></a></li>
-                    <li><a href="#"><img alt="Santander"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-santander.png"></a>
-                    </li>
-                    <li><a href="#"><img alt="Cabal"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-cabal.png"></a></li>
-                    <li><a href="#"><img alt="Abitab"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-abitab.png"></a></li>
-                    <li><a href="#"><img alt="BBVA"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-bbva.png"></a></li>
-                    <li><a href="#"><img alt="Lider"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-lider.png"></a></li>
-                    <li><a href="#"><img alt="Italcred"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-italcred.png"></a></li>
-                    <li><a href="#"><img alt="PassCard"
-                                         src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-passcard.png"></a></li>
-                </ul>
-                <h4 class="footer_dac"><a href="#">Envíos a todo el país: <img alt="DAC" class="dac"
-                                                                               src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-dac.png"></a>
-                </h4>
-            </div>
-            <div class="footer__logo">
-                <a href="#"><img src="https://cdn.woow.com.uy/public/4_0/img/logo-woow-2017.svg" alt="logo"></a>
-                <p class="copyright"><a href="#">© 2017 woOw! Derechos Reservados</a></p>
-            </div>
-
 
         </div>
-        <br>
-        <br><br>
-    </section>
-</div>
-<script src="js/index.js"></script>
+    </footer>
+
+    <script src="./js/vendors/wow.min.js" ></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
